@@ -2,12 +2,12 @@
 End-to-end SQL data cleaning workflow applied to a real-world layoffs dataset.
 
 
-# 📊 SQL Data Cleaning Project: Layoffs Dataset
+#  SQL Data Cleaning Project: Layoffs Dataset
 
-## 📌 Project Overview
+##  Project Overview
 This project demonstrates comprehensive data cleaning techniques on a real-world layoffs dataset using SQL. I followed along with [Alex The Analyst's MySQL Data Cleaning Tutorial](https://www.youtube.com/watch?v=4UltKCnnnTA&list=PLUaB-1hjhk8FE_XZ87vPPSfHqb6OcM0cF) to learn and apply industry-standard data cleaning practices. The objective was to transform raw, inconsistent data into a clean, analysis-ready format through duplicate removal, data standardization, handling missing values, and ensuring proper data types.
 
-## 📂 Dataset Information
+##  Dataset Information
 * **Source**: [Alex The Analyst - MySQL Series](https://github.com/AlexTheAnalyst/MySQL-YouTube-Series)
 * **Description**: Tech industry layoffs data containing information about companies, locations, industries, and layoff statistics
 * **Original Columns**: 
@@ -21,7 +21,7 @@ This project demonstrates comprehensive data cleaning techniques on a real-world
   - `country` - Country where layoffs occurred
   - `funds_raised_millions` - Total funds raised by company
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 * **Database**: MySQL
 * **SQL Techniques**: 
   - Common Table Expressions (CTEs)
@@ -30,7 +30,7 @@ This project demonstrates comprehensive data cleaning techniques on a real-world
   - Data Type Conversions
   - String Manipulation Functions
 
-## 🧹 Data Cleaning Process
+##  Data Cleaning Process
 
 ### 1. **Created Staging Table**
 To preserve the integrity of raw data, a staging table was created where all transformations were performed. This follows the best practice of never modifying original data directly.
@@ -66,7 +66,7 @@ WHERE t1.industry IS NULL AND t2.industry IS NOT NULL;
 ### 5. **Final Cleanup**
 Removed helper columns (`row_num`) that were only needed during the cleaning process, leaving a streamlined, production-ready dataset.
 
-## ✅ Results & Outcome
+##  Results & Outcome
 A clean, consistent, and analysis-ready dataset with:
 - ✓ No duplicate records
 - ✓ Standardized formatting across all text fields
@@ -74,7 +74,7 @@ A clean, consistent, and analysis-ready dataset with:
 - ✓ Missing data handled appropriately
 - ✓ Only meaningful records retained
 
-## 💡 Key SQL Skills Demonstrated
+##  Key SQL Skills Demonstrated
 * Creating and managing staging tables
 * Advanced duplicate detection using window functions
 * Data standardization and normalization techniques
@@ -83,13 +83,13 @@ A clean, consistent, and analysis-ready dataset with:
 * Data type conversions and formatting
 * Following SQL best practices and safe update procedures
 
-## 🚀 How to Run
+##  How to Run
 1. Download the raw `layoffs.csv` dataset from the source repository
 2. Import the dataset into MySQL as the `layoffs` table
 3. Execute the `data_cleaning.sql` script
 4. The cleaned data will be available in the `layoffs_staging2` table
 
-## 📈 Next Steps
+##  Next Steps
 This cleaned dataset is now ready for:
 * **Exploratory Data Analysis (EDA)** - Uncovering trends and patterns
 * **Statistical Analysis** - Analyzing layoff trends by industry, country, and time period
@@ -98,7 +98,7 @@ This cleaned dataset is now ready for:
 
 
 
-## 🎯 Learning Outcomes
+##  Learning Outcomes
 This project strengthened my skills in:
 - Writing complex SQL queries for real-world data problems
 - Implementing data quality assurance procedures
